@@ -1,0 +1,71 @@
+/* Team Section Styles */
+
+.team-section {
+  background-color: #f9f9f9; /* Background color for the team section */
+  padding-top: 80px; /* Adjust as needed */
+  padding-bottom: 80px; /* Adjust as needed */
+}
+
+.section-title {
+  font-size: 28px;
+  color: #db1c55; /* Title text color */
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #000000; /* Subtitle text color */
+}
+
+.team-member {
+  background-color: #fff; /* Background color for each team member card */
+  border: 1px solid #ddd; /* Border for each card */
+  border-radius: 5px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.member-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* Rounded member images */
+}
+
+.member-name {
+  font-size: 20px;
+  color: #333; /* Member name text color */
+  margin-top: 15px;
+}
+
+.member-position {
+  font-size: 16px;
+  color: #666; /* Member position text color */
+  margin-top: 10px;
+}
+
+.social-links .social-link {
+  color: #666; /* Social icon color */
+  font-size: 18px;
+  margin-right: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-links .social-link:hover {
+  color: #007bff; /* Hover color for social icons */
+}
+
+.team-member:hover {
+  border: 3px solid #a82bda; /* Hover border color */
+  transform: scale(1.6); /* Zoom effect on hover */
+  box-shadow: 0px 0px 10px rgba(13, 36, 240, 0.918)
+}
+
+/* Adjust padding/margin as needed for responsiveness */
+@media (max-width: 767px) {
+  .team-member {
+    margin-bottom: 10px;
+    padding: 15px;
+  }
+}

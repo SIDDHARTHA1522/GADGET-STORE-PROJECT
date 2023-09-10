@@ -1,0 +1,97 @@
+/* Basic Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.menu-section {
+  background-color: #fff;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #333;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.menu-item {
+  width: calc(33.33% - 20px);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.menu-item:hover {
+  transform: scale(1.03);
+  background-color: #ffcc00; /* Change color on hover */
+}
+
+.menu-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.menu-item:hover .menu-image {
+  opacity: 0.8; /* Change opacity on hover */
+}
+
+.menu-title {
+  font-size: 20px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.menu-price {
+  font-size: 18px;
+  color: #ff5733;
+  margin-top: 5px;
+}
+
+.menu-description {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Button Styles */
+.menu-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff5733;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.menu-button:hover {
+  background-color: #333; /* Change button color on hover */
+}

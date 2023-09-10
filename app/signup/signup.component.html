@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.component.css"> <!-- Add your stylesheet link here -->
+</head>
+<body>
+    <div class="container">
+        <div id="login-box" class="sign-up-box">
+            <div class="left">
+                <h1>Sign up</h1>
+                <form name='signupForm' (submit)="doSignup()">
+                    <div class="error-message" *ngIf='error'>{{error}}</div>
+                    <div class="success-message" *ngIf='success'>{{success}}</div>
+                    <input type="text" name="username" placeholder="Username" [(ngModel)]="username" />
+                    <input type="password" name="password" [(ngModel)]="password" placeholder="Password" required />
+                    <div class="checkbox-group">
+                        <h3>Select Roles:</h3>
+                        <div *ngFor="let role of user_roles" class="checkbox-item">
+                            <input [(ngModel)]="role.selected" name="{{ role.name }}" type="checkbox" id="{{role.name}}" (change)="onChangeCategory($event, role)">
+                            <label for="{{role.name}}">{{role.name}}</label>
+                        </div>
+                    </div>
+                    <input type="submit" name="signup_submit" value="Sign me up" />
+                </form>
+            </div>
+
+            <div class="right">
+                <span class="loginwith">Sign in with<br />Social Network</span>
+                <button class="social-signin youtube"><a href="https://www.youtube.com/channel/UCE0snvhFyNeDbztd7FUcXBQ">Log in with Facebook</a></button>
+                <button class="social-signin facebook"><a href="https://www.youtube.com/channel/UCE0snvhFyNeDbztd7FUcXBQ">Log in with Twitter</a></button>
+                <button class="social-signin google">Log in with Google+</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* Basic Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0df594;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Login Card Styles */
+.user_card {
+  width: 350px;
+  background-color: #06bdf5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.user_card:hover {
+  transform: scale(1.02);
+}
+
+.brand_logo_container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.brand_logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* Form Styles */
+.form_container {
+  padding: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group-text {
+  background-color: #930fff;
+  color: #fff;
+  border: none;
+  border-radius: 10px 0 0 10px;
+}
+
+.input-group input {
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 0 10px 10px 0;
+  padding: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: bold;
+}
+
+.login_btn {
+  background-color: #3498db;
+  color: #030303;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.login_btn:hover {
+  background-color: #2980b9;
+}
+
+/* Links and Other Styles */
+.links {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+.links a:hover {
+  color: #2980b9;
+}

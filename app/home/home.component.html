@@ -1,0 +1,16 @@
+<div *ngIf="isSignedin">
+	<p>Welcome back, {{ signedinUser }}!</p>
+
+	<div>
+	<p>WELCOME , YOU ARE THE ADMIN OUR GADGET STORE</p>
+	</div>
+
+	<p><a style="text-decoration: underline; cursor: pointer;" (click)="doSignout()">Signout</a></p>
+</div>
+
+<app-about></app-about>
+<app-gallary></app-gallary>
+<app-menu></app-menu>
+<app-chef></app-chef>
+<app-testimonial></app-testimonial>
+
